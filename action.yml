@@ -1,4 +1,4 @@
-name: 'Buildo World'
+name: 'Buildeo World'
 description: 'Build something'
 inputs:
   who-to-greet:  # id of input

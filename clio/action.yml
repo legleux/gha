@@ -1,0 +1,7 @@
+name: 'echo yay'
+description: 'echo yay'
+runs:
+  using: "composite"
+  steps:
+    - run: echo Yay
+      shell: bash

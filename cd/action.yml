@@ -1,11 +1,11 @@
 # action.yml
 name: 'Hello World'
 description: 'Run a docker'
-inputs:
-  gitrev:  # id of input
-    description: 'da rev'
-    required: false
-    default: 'Woild'
+# inputs:
+#   gitrev:  # id of input
+#     description: 'da rev'
+#     required: false
+#     default: 'Woild'
 # outputs:
 #   time: # id of output
 #     description: 'The time we greeted you'

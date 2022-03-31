@@ -1,7 +1,11 @@
-name: 'echo yay'
-description: 'echo yay'
+name: 'build clio'
+description: 'build clio'
+
 runs:
   using: "composite"
   steps:
+    - name: Get src
+      uses: actions/checkout@v2
+      with: legleux/clio
     - run: echo Yay
       shell: bash

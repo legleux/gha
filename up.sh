@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
-echo 'jfc'
-echo "uppin' it"
+
+
+ls -lh
+
+cmake -B build && cmake --build build --parallel $(nproc)

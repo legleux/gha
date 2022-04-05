@@ -4,4 +4,4 @@ description: 'build clio'
 runs:
   using: 'docker'
   image: 'docker://legleux/clio_builder'
-  entrypoint: 'cmake'
+  entrypoint: 'cmake --version' 

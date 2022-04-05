@@ -2,7 +2,5 @@ name: 'build clio'
 description: 'build clio'
 
 runs:
-  using: "composite"
-  steps:
-    - run: echo Yay
-      shell: bash
+  using: 'docker'
+  image: 'legleux/clio_builder'

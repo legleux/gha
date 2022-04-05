@@ -3,6 +3,6 @@ description: 'build clio'
 
 runs:
   using: 'docker'
-  image: 'docker://legleux/clio_builder'
+  image: 'docker://legleux/ct'
   entrypoint: |
-    ls 
+    build.sh

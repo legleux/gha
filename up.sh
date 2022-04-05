@@ -3,4 +3,4 @@
 
 ls -lh
 
-cmake -B build && cmake --build build --parallel $(nproc)
+cmake -B clio_src/build && cmake --build clio_src/build --parallel $(nproc)

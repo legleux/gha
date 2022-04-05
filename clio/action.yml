@@ -4,9 +4,5 @@ description: 'build clio'
 runs:
   using: "composite"
   steps:
-    - name: Get src
-      uses: actions/checkout@v3
-      with: 
-        repository: legleux/clio
     - run: echo Yay
       shell: bash

@@ -1,7 +1,8 @@
 name: 'Lint Action'
 description: 'Runs clang-format'
 runs:
-  using: "composite"
+  using: 'docker'
+  image: 'ubuntu:bionic'
   steps:
     - uses: actions/checkout@v3
     - name: Install clang-format

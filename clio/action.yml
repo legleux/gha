@@ -3,4 +3,4 @@ description: 'build clio'
 
 runs:
   using: 'docker'
-  image: 'legleux/clio_builder'
+  image: 'docker://legleux/clio_builder'

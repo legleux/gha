@@ -5,4 +5,4 @@ runs:
   using: 'docker'
   image: 'docker://legleux/ct'
   entrypoint: |
-    ls
+    up.sh

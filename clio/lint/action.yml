@@ -14,6 +14,6 @@ runs:
         set -o pipefail
         git diff --color --exit-code | tee "clang-format.patch"
 
-    - run: run script
-      shell: bash
-      run: script.sh
+    # - run: run script
+    #   shell: bash
+    #   run: script.sh

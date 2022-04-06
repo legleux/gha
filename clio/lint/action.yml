@@ -4,7 +4,9 @@ description: 'Run a clang-format'
 runs:
   using: "composite"
   steps:
-    - run: echo "yo"
+    - run: |
+        echo "yo"
+        ls -lh
       shell: bash
 
     - name: Check for differences

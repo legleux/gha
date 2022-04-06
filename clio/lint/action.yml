@@ -16,7 +16,6 @@ runs:
       id: assert
       shell: bash
       run: |
-        set -o pipefail
         git diff --color --exit-code | tee "clang-format.patch"
 
     - run: script.sh

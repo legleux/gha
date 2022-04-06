@@ -1,7 +1,3 @@
-outputs:
-  patch_file: 
-    description: 'The correction to apply'
-    value: ${{ steps.assert.outputs.pat }}
 runs:
   using: "composite"
   steps:
@@ -14,17 +10,7 @@ runs:
       shell: bash
       run: |
         git diff --color --exit-code | tee "clang-format.patch"
-        ls -lha
-        echo "::set-output name=pat::$(cat clang-format.patch)"
+
     - run: script.sh
       shell: bash
 
-    - run: exit 1
-      shell: bash
-
-    - name: upload patch file
-      uses: actions/upload-artifact@v2
-      with:
-        if-no-files-found: ignore
-        name: patch
-        path: patch

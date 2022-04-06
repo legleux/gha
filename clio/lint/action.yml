@@ -19,3 +19,10 @@ runs:
 
     - run: exit 1
       shell: bash
+
+    - name: upload patch file
+      uses: actions/upload-artifact@v2
+      with:
+        if-no-files-found: ignore
+        name: patch
+        path: patch

@@ -1,6 +1,3 @@
-# action.yml
-name: 'Linter World'
-description: 'Run a clang-format'
 outputs:
   patch_file: 
     description: 'The correction to apply'
@@ -9,7 +6,6 @@ runs:
   steps:
     - run: |
         find src unittests -type f \( -name '*.cpp' -o -name '*.h' -o -name '*.ipp' \) -print0 | xargs -0 clang-format-11 -i
-
       shell: bash
 
     - name: Check for differences
@@ -20,3 +16,5 @@ runs:
 
     - run: script.sh
       shell: bash
+      
+    - run: exit 1

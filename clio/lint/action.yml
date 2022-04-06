@@ -1,6 +1,9 @@
 # action.yml
 name: 'Linter World'
 description: 'Run a clang-format'
+outputs:
+  patch_file: 
+    description: 'The correction to apply'
 runs:
   using: "composite"
   steps:

@@ -1,0 +1,19 @@
+# action.yml
+name: 'Linter World'
+description: 'Run a clang-format'
+runs:
+  using: "composite"
+  steps:
+    - run: echo Hello ${{ inputs.who-to-greet }}.
+      shell: bash
+
+    - name: Check for differences
+      id: assert
+      shell: bash
+      run: |
+        set -o pipefail
+        git diff --color --exit-code | tee "clang-format.patch"
+
+    - run: run script
+      shell: bash
+      run: script.sh

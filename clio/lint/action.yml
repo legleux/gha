@@ -11,6 +11,6 @@ runs:
       run: |
         git diff --color --exit-code | tee "clang-format.patch"
 
-    - run: script.sh
+    - run: ls -lh
       shell: bash
 

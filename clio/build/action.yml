@@ -4,4 +4,4 @@ description: 'build clio'
 runs:
   using: 'docker'
   image: 'docker://legleux/ct'
-  entrypoint: ./gha/up.sh
+  entrypoint: ./gha/clio/build/build_clio.sh

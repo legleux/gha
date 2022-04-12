@@ -1,7 +1,0 @@
-name: 'build clio'
-description: 'build clio'
-
-runs:
-  using: 'docker'
-  image: 'docker://legleux/ct'
-  entrypoint: ./gha/clio/build/build_clio.sh
